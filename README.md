@@ -34,3 +34,14 @@ Explore the live version of the website: [Portfolio Website](https://your-live-s
 
 ## 📂 Project Structure
 
+- **Here's a quick overview of the folder structure:**
+.
+├── components    // Reusable React components
+├── pages         // Next.js pages
+│   ├── api       // Serverless functions
+│   └── index.js  // Homepage
+├── public        // Static assets like images
+├── styles        // Global and component-specific styles
+├── utils         // Helper functions
+├── next.config.js// Next.js configuration
+└── package.json  // Project metadata
