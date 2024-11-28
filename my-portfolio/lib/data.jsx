@@ -1,5 +1,5 @@
 export const mainData = {
-    websiteTitle: 'Gray',
+    websiteTitle: 'Nadun Daluwatta',
     description: 'Personal vCard/Portfolio Template',
     keywords: 'gray, portfolio, vCard',
 };

@@ -23,10 +23,10 @@ export default function Home() {
                         <div className="sections-wrapper">
                             {/* About Section */}
                             <About />
-                            {/* Portfolio Section */}
-                            <Portfolio />
                             {/* Services Section */}
                             <Services />
+                            {/* Portfolio Section */}
+                            <Portfolio />
                             {/* Testimonial Section */}
                             <Testimonial />
                             {/* Resume Section */}

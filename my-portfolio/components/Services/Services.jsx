@@ -1,5 +1,6 @@
 import React from 'react'
 import { servicesData } from './ServicesData'
+import { PencilIcon, EyeIcon } from '@heroicons/react/outline';
 
 const Services = () => {
     return (

@@ -97,7 +97,7 @@ const About = () => {
                         </div>
                         <div className="d-inline-block ps-2">
                             <h4 className="line-height-100 fw-normal mb-0">+</h4>
-                            <p className="mono-heading text-black">Years of Experience</p>
+                            <p className="mono-heading text-black">Months of Experience</p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ const About = () => {
                             <h1 className="font-family-mono fw-semi-bold stroke-text display-4"><span className="counter">{counters.hoursOfWorking}</span></h1>
                         </div>
                         <div className="d-inline-block ps-2">
-                            <h4 className="line-height-100 fw-normal mb-0">k</h4>
+                            <h4 className="line-height-100 fw-normal mb-0">+</h4>
                             <p className="mono-heading text-black">Hours of Working</p>
                         </div>
                     </div>

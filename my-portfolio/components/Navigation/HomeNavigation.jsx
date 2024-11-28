@@ -8,8 +8,8 @@ const Navigation = () => {
     // Define an array of navigation items with their corresponding IDs
     const navItems = [
         { label: 'About Me', id: 'about' },
-        { label: 'Portfolio', id: 'portfolio' },
         { label: 'Services', id: 'services' },
+        { label: 'Portfolio', id: 'portfolio' },
         { label: 'Testimonial', id: 'testimonial' },
         { label: 'Resume', id: 'resume' },
         { label: 'Blog', id: 'blog' },

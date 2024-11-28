@@ -1,7 +1,7 @@
 export const headerData = {
     mainData: {
-        firstName: 'Christina',
-        secondName: 'Gray',
+        firstName: 'Nadun',
+        secondName: 'Dalu',
         phone: '+(976) 12 34 9999',
         email: 'flatheme@gmail.com',
         copywriter: 'FlaTheme',
