@@ -1,4 +1,4 @@
-export const resumeData = {
+export const eduData = {
     mainData: {
         title: "Resume",
         title2: "Education & Experience",

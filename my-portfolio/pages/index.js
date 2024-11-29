@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { BackgroundImages, Header, Navigation, About, Portfolio, Services, Testimonial, Clients, Resume, Blog, Connect, Map } from '@/components'
+import { BackgroundImages, Header, Navigation, About, Portfolio, Services, Testimonial, Clients, Resume, Blog, Connect, Map, Education } from '@/components'
 import { mainData } from '@/lib/data'
 
 export default function Home() {
@@ -29,8 +29,8 @@ export default function Home() {
                             <Portfolio />
                             {/* Testimonial Section */}
                             <Testimonial />
-                            {/* Resume Section */}
-                            <Resume />
+                            {/* Education Section */}
+                            <Education />
                             {/* Clients Section */}
                             <Clients />
                             {/* Blog Section */}

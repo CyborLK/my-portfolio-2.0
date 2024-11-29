@@ -8,7 +8,7 @@ export { default as PortfolioItem } from "./Portfolio/PortfolioItem";
 export { default as Services } from "./Services/Services";
 export { default as Testimonial } from "./Testimonial/Testimonial";
 export { default as Clients } from "./Clients/Clients";
-export { default as Resume } from "./Resume/Resume";
+export { default as Education } from "./Education/Education";
 export { default as Blog } from "./Blog/Blog";
 export { default as Connect } from "./Connect/Connect";
 export { default as Map } from "./Map/Map";

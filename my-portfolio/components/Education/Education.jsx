@@ -1,14 +1,14 @@
 import React from 'react'
-import { resumeData } from './ResumeData'
+import { eduData } from './EduData'
 
-const Resume = () => {
+const Education = () => {
     return (
-        <div className="section-box mt-4" id="resume">
+        <div className="section-box mt-4" id="education">
             <div className="row">
                 <div className="col-12 col-md-10 col-xl-8">
-                    <h6 className="title-heading mb-3" data-backdrop-text={resumeData.mainData.title}>{resumeData.mainData.title}</h6>
-                    <h1>{resumeData.mainData.title2}</h1>
-                    <p>{resumeData.mainData.description}</p>
+                    <h6 className="title-heading mb-3" data-backdrop-text={eduData.mainData.title}>{eduData.mainData.title}</h6>
+                    <h1>{eduData.mainData.title2}</h1>
+                    <p>{eduData.mainData.description}</p>
                 </div>
             </div>
             <div className="row g-4 g-lg-5 mt-0">
@@ -17,7 +17,7 @@ const Resume = () => {
                         <div className="icon-2xl text-black mb-3">
                             <i className="bi bi-mortarboard line-height-100"></i>
                         </div>
-                        {resumeData.education.map((item, index) => (
+                        {eduData.education.map((item, index) => (
                             <div key={index} className="resume-box">
                                 <span className="resume-date">{item.date}</span>
                                 <h5 className="fw-medium">{item.degree}</h5>
@@ -31,7 +31,7 @@ const Resume = () => {
                         <div className="icon-2xl text-black mb-3">
                             <i className="bi bi-briefcase line-height-100"></i>
                         </div>
-                        {resumeData.experience.map((item, index) => (
+                        {eduData.experience.map((item, index) => (
                             <div key={index} className="resume-box">
                                 <span className="resume-date">{item.date}</span>
                                 <h5 className="fw-medium">{item.degree}</h5>
@@ -45,4 +45,4 @@ const Resume = () => {
     )
 }
 
-export default Resume
+export default Education
