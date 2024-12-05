@@ -10,8 +10,8 @@ const Navigation = () => {
         { label: 'About Me', id: 'about' },
         { label: 'Services', id: 'services' },
         { label: 'Portfolio', id: 'portfolio' },
-        { label: 'Testimonial', id: 'testimonial' },
         { label: 'Education', id: 'education' },
+        { label: 'Testimonial', id: 'testimonial' },
         { label: 'Blog', id: 'blog' },
         { label: 'Contact', id: 'contact' },
     ];

@@ -28,10 +28,11 @@ export default function Home() {
                             {/* Portfolio Section */}
                             <Portfolio />
                             {/* Testimonial Section */}
-                            <Testimonial />
-                            {/* Education Section */}
+                            
                             <Education />
                             {/* Clients Section */}
+                            <Testimonial />
+                            {/* Education Section */}
                             <Clients />
                             {/* Blog Section */}
                             <Blog />
