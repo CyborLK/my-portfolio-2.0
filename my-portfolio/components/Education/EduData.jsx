@@ -6,36 +6,32 @@ export const eduData = {
     },
     education: [
         {
-            date: '2020 - 2023',
-            degree: 'Bachelor Degree of Business',
-            university: 'University of Business',
+            date: '2022 - Present',
+            degree: 'Bachelor of ICT in Software Technology',
+            university: 'University of Sri Jayewardenepura',
         },
         {
-            date: '2018 - 2020',
-            degree: 'Master Degree of Design',
-            university: 'University of IT',
+            date: '2012 - 2020',
+            degree: 'GCE Advanced Level',
+            university: 'St.Thomas\'College',
         },
-        {
-            date: '2014 - 2018',
-            degree: 'Bachelor Degree of Design',
-            university: 'University of Design',
-        },
+        
     ],
     experience: [
         {
-            date: '2020 - PRESENT',
-            degree: 'Director of Operations',
-            university: 'FlaTheme',
+            date: '2024 - PRESENT',
+            degree: 'Media Coordinator',
+            university: 'ICTS - University of Sri Jayewardenepura',
         },
         {
-            date: '2018 - 2020',
-            degree: 'Senior Designer',
-            university: 'FlaTheme',
+            date: '2020 - Present',
+            degree: 'Graphic Designer & Owner',
+            university: 'Cybor Graphics',
         },
         {
-            date: '2014 - 2018',
-            degree: 'UI & UX Designer',
-            university: 'FlaTheme',
+            date: '2021 - 2022',
+            degree: 'Bank Trainee',
+            university: 'People\'s Bank - Sri Lanka',
         },
     ]
 };
