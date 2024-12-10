@@ -7,11 +7,12 @@ export { default as Portfolio } from "./Portfolio/Portfolio";
 export { default as PortfolioItem } from "./Portfolio/PortfolioItem";
 export { default as Services } from "./Services/Services";
 export { default as Testimonial } from "./Testimonial/Testimonial";
+export { default as Achivements } from "./Achivements/Achivements";
 export { default as Clients } from "./Clients/Clients";
 export { default as Education } from "./Education/Education";
 export { default as Blog } from "./Blog/Blog";
 export { default as Connect } from "./Connect/Connect";
-export { default as Map } from "./Map/Map";
+
 export { default as BlogNavigation } from "./Navigation/BlogNavigation";
 export { default as PortfolioNavigation } from "./Navigation/PortfolioNavigation";
 export { default as Lightbox } from "./UI/Lightbox";
