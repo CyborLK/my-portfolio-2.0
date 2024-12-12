@@ -5,7 +5,7 @@ const Navigation = () => {
     const [isFixed, setIsFixed] = useState(false);
     const [activeLink, setActiveLink] = useState('about');
 
-    // Define an array of navigation items with their corresponding IDs
+    // Define navigation items
     const navItems = [
         { label: 'About Me', id: 'about' },
         { label: 'Services', id: 'services' },
@@ -27,50 +27,50 @@ const Navigation = () => {
         { label: 'YouTube', icon: 'fab fa-youtube', url: 'https://youtube.com' },
     ];
 
-    // Define a function to handle the scroll event
+    // Smooth scrolling and active link management
     const handleScroll = () => {
         const scrollY = window.scrollY;
+        let currentActive = activeLink;
 
-        // Determine which link is active based on the scroll position
         for (const item of navItems) {
             const element = document.getElementById(item.id);
-            if (element && scrollY >= element.offsetTop) {
-                setActiveLink(item.id);
+            if (element) {
+                const offsetTop = element.offsetTop - 100; // Adjust for sticky nav height
+                const offsetBottom = offsetTop + element.offsetHeight;
+                if (scrollY >= offsetTop && scrollY < offsetBottom) {
+                    currentActive = item.id;
+                    break;
+                }
             }
         }
+        setActiveLink(currentActive);
 
-        // Calculate headerHeight and update isFixed
-        const headerHeight = document.getElementById('header').clientHeight;
+        const headerHeight = document.getElementById('header')?.clientHeight || 0;
         const windowWidth = window.innerWidth;
-
-        if (windowWidth < 992) {
-            if (scrollY >= headerHeight) {
-                setIsFixed(true);
-            } else {
-                setIsFixed(false);
-            }
-        }
+        setIsFixed(windowWidth < 992 && scrollY >= headerHeight);
     };
 
-    // Add a scroll event listener when the component mounts
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
-        // Get the initial headerHeight
-        const initialHeaderHeight = document.getElementById('header').clientHeight;
-
-        // Check and update isFixed initially
-        const windowWidth = window.innerWidth;
-        if (windowWidth < 992) {
-            if (window.scrollY >= initialHeaderHeight) {
-                setIsFixed(true);
-            }
+        const headerHeight = document.getElementById('header')?.clientHeight || 0;
+        if (window.innerWidth < 992 && window.scrollY >= headerHeight) {
+            setIsFixed(true);
         }
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const handleNavClick = (id) => {
+        const targetElement = document.getElementById(id);
+        if (targetElement) {
+            const topPosition = targetElement.offsetTop - 80; // Adjust for sticky nav height
+            window.scrollTo({ top: topPosition, behavior: 'smooth' });
+            setActiveLink(id);
+        }
+    };
 
     return (
         <div className="nav-wrapper">
@@ -95,14 +95,14 @@ const Navigation = () => {
                 <ul className="nav">
                     {navItems.map((item) => (
                         <li className="nav-item" key={item.id}>
-                            <Link
-                                href={`#${item.id}`}
+                            <button
                                 className={`nav-link ${activeLink === item.id ? 'active' : ''}`}
+                                onClick={() => handleNavClick(item.id)}
                             >
                                 <span className="nav-link-desktop">{item.label}</span>
                                 <span className="nav-link-mobile">{item.label.charAt(0)}</span>
-                                <span className="nav-circle"></span>
-                            </Link>
+                                <span className={`nav-circle ${activeLink === item.id ? 'active-circle' : ''}`}></span>
+                            </button>
                         </li>
                     ))}
                 </ul>

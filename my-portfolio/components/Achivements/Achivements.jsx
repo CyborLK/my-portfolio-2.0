@@ -45,6 +45,7 @@ const Achivements = () => {
                     </div>
                     {/* end Slider Navigation */}
                 </div>
+                
             </div>
             <Swiper
                 onSwiper={it => (sliderRef.current = it)}
