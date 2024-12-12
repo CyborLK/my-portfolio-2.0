@@ -11,10 +11,20 @@ const Navigation = () => {
         { label: 'Services', id: 'services' },
         { label: 'Portfolio', id: 'portfolio' },
         { label: 'Education', id: 'education' },
-        { label: 'Achivements', id: 'achivements' },
+        { label: 'Achievements', id: 'achievements' },
         { label: 'Testimonial', id: 'testimonial' },
         { label: 'Blog', id: 'blog' },
         { label: 'Contact', id: 'contact' },
+    ];
+
+    // Social media links
+    const socialMediaLinks = [
+        { label: 'Facebook', icon: 'fab fa-facebook-f', url: 'https://facebook.com' },
+        { label: 'LinkedIn', icon: 'fab fa-linkedin-in', url: 'https://linkedin.com' },
+        { label: 'X', icon: 'fab fa-twitter', url: 'https://twitter.com' },
+        { label: 'Behance', icon: 'fab fa-behance', url: 'https://behance.net' },
+        { label: 'Medium', icon: 'fab fa-medium', url: 'https://medium.com' },
+        { label: 'YouTube', icon: 'fab fa-youtube', url: 'https://youtube.com' },
     ];
 
     // Define a function to handle the scroll event
@@ -64,6 +74,23 @@ const Navigation = () => {
 
     return (
         <div className="nav-wrapper">
+            {/* Social Media Icons Section */}
+            <div className="social-media-icons">
+                {socialMediaLinks.map((social, index) => (
+                    <a
+                        key={index}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social-icon"
+                        aria-label={social.label}
+                    >
+                        <i className={social.icon}></i>
+                    </a>
+                ))}
+            </div>
+
+            {/* Navigation Section */}
             <div className={`section-nav ${isFixed ? 'fixed' : ''}`}>
                 <ul className="nav">
                     {navItems.map((item) => (
@@ -81,7 +108,7 @@ const Navigation = () => {
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Navigation
+export default Navigation;

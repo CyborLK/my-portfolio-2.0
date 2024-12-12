@@ -9,16 +9,7 @@ export const headerData = {
         twitterURL: '#',
         youtubeURL: '#',
     },
-    links: [
-        {
-            name: 'Link Item 1',
-            url: '#'
-        },
-        {
-            name: 'Link Item 2',
-            url: '#'
-        },
-    ],
+    
     socialLinks: [
         {
             name: 'FB',
