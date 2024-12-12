@@ -1,28 +1,27 @@
-import TestimonialAvatar from '@/public/images/testimonial-avatar.jpg';
+import Certificate1 from '@/public/images/certificate1.jpg';
+import Certificate2 from '@/public/images/certificate2.jpg';
+import Certificate3 from '@/public/images/certificate3.jpg';
 
 export const achivementsData = {
     mainData: {
-        title: "Achivements",
-        title2: "What People Say",
+        title: "Certificates",
+        title2: "My Certifications",
     },
     achivements: [
         {
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis',
-            name: 'Sandra Radford',
-            jobTitle: 'Project Manager',
-            avatar: TestimonialAvatar,
+            image: Certificate1,
+            name: 'Web Development Certification',
+            issuer: 'Online Learning Platform',
         },
         {
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis',
-            name: 'Sandra Radford',
-            jobTitle: 'Project Manager',
-            avatar: TestimonialAvatar,
+            image: Certificate2,
+            name: 'Advanced React Course',
+            issuer: 'Tech Education Institute',
         },
         {
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis',
-            name: 'Sandra Radford',
-            jobTitle: 'Project Manager',
-            avatar: TestimonialAvatar,
+            image: Certificate3,
+            name: 'Full Stack Development',
+            issuer: 'Coding Bootcamp',
         },
     ]
 };

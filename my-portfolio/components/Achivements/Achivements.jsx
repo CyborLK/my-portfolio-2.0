@@ -14,7 +14,6 @@ const Achivements = () => {
 
     React.useEffect(() => {
         if (swiper) {
-            console.log("Swiper instance:", swiper);
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
             swiper.navigation.init();
@@ -26,14 +25,22 @@ const Achivements = () => {
         <div className="section-box mt-4" id="achivements">
             <div className="row align-items-center">
                 <div className="col-6">
-                    <h6 className="title-heading mb-0" data-backdrop-text={achivementsData.mainData.title}>{achivementsData.mainData.title2}</h6>
+                    <h6 className="title-heading mb-0" data-backdrop-text={achivementsData.mainData.title}>
+                        {achivementsData.mainData.title2}
+                    </h6>
                 </div>
                 <div className="col-6 text-end">
                     {/* Slider Navigation */}
-                    <div className="button-circle button-circle-sm button-circle-outline-dark swiper-custom-prev" onClick={() => sliderRef.current?.slidePrev()}>
+                    <div 
+                        className="button-circle button-circle-sm button-circle-outline-dark swiper-custom-prev" 
+                        onClick={() => sliderRef.current?.slidePrev()}
+                    >
                         <i className="bi bi-arrow-left"></i>
                     </div>
-                    <div className="button-circle button-circle-sm button-circle-outline-dark swiper-custom-next" onClick={() => sliderRef.current?.slideNext()}>
+                    <div 
+                        className="button-circle button-circle-sm button-circle-outline-dark swiper-custom-next" 
+                        onClick={() => sliderRef.current?.slideNext()}
+                    >
                         <i className="bi bi-arrow-right"></i>
                     </div>
                     {/* end Slider Navigation */}
@@ -44,17 +51,14 @@ const Achivements = () => {
                 slidesPerView={1}
                 spaceBetween={30}
                 breakpoints={{
-                    // when window width is >= 768px
                     768: {
                         slidesPerView: 1,
                         spaceBetween: 30,
                     },
-                    // when window width is >= 992px
                     992: {
                         slidesPerView: 1,
                         spaceBetween: 40,
                     },
-                    // when window width is >= 1200px
                     1200: {
                         slidesPerView: 2,
                         spaceBetween: 40,
@@ -68,28 +72,24 @@ const Achivements = () => {
             >
                 {achivementsData.achivements.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <div className="achivements-box">
-                            <div className="d-block text-yellow mb-3">
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
+                        <div className="certificate-box">
+                            <div className="certificate-image-container">
+                                <Image 
+                                    src={item.image} 
+                                    alt={item.name} 
+                                    layout="responsive" 
+                                    objectFit="contain" 
+                                    placeholder="blur" 
+                                    className="certificate-image"
+                                />
                             </div>
-                            <p>{item.description}</p>
-                        </div>
-                        <div className="d-flex align-items-center mt-3">
-                            <div className="d-inline-block me-3">
-                                <Image className="img-mask-avatar-sm" src={item.avatar} alt={item.name} placeholder="blur" />
-                            </div>
-                            <div className="d-inline-block">
+                            <div className="certificate-details mt-3">
                                 <h5 className="fw-medium m-0 line-height-140">{item.name}</h5>
-                                <span className="font-small fw-normal">{item.jobTitle}</span>
+                                <span className="font-small fw-normal">{item.issuer}</span>
                             </div>
                         </div>
                     </SwiperSlide>
                 ))}
-
             </Swiper>
         </div>
     );

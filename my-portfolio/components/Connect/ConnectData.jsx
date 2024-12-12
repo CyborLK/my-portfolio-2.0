@@ -1,6 +1,6 @@
 export const connectData = {
     mainData: {
-        title: "Clients",
+        title: "Contact",
         title2: "Get in touch",
         title3: "Let's Connect",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
