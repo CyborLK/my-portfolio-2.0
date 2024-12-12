@@ -1,11 +1,11 @@
 export const connectData = {
     mainData: {
-        title: "Contact",
-        title2: "Get in touch",
-        title3: "Let's Connect",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        title: "Contact Us",
+        title2: "Reach Out Anytime",
+        title3: "We're Here to Help",
+        description: "Feel free to reach out for collaborations or just a friendly chat!",
         phone: "+94 76 22 13 088",
         email: "nadunsd@gmail.com",
         address: "Matale, Sri Lanka",
-    }
+    },
 };
