@@ -4,7 +4,7 @@ import React from 'react';
 
 const PortfolioItem = ({ imageSrc, category, projectTitle, slug }) => {
     return (
-        <div className={`col-12 col-xl-4 portfolio-item ${category}`}>
+        <div className={`col-12 col-xl-3 portfolio-item ${category}`}>
             <div className="portfolio-box">
                 <Image src={imageSrc} alt={projectTitle} placeholder="blur" />
                 <span className="portfolio-category">{category}</span>
