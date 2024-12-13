@@ -22,7 +22,7 @@ const Achivements = () => {
     }, [swiper]);
 
     return (
-        <div className="section-box mt-4" id="achivements">
+        <div className="section-box mt-4" id="achievement">
             <div className="row align-items-center">
                 <div className="col-6">
                     <h6 className="title-heading mb-0" data-backdrop-text={achivementsData.mainData.title}>
