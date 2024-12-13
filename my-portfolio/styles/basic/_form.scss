@@ -26,7 +26,7 @@ textarea {
 }
 input:not(.form-check-input), textarea, 
 .form-control {
-	color: black;
+	color: rgb(220, 0, 0);
 	&::-webkit-input-placeholder { color: $color-primary-lighter; }
 	&::-moz-placeholder { color: $color-primary-lighter; }
 	&:-ms-placeholder { color: $color-primary-lighter; }
