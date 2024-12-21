@@ -29,7 +29,7 @@ export const portfolioData = {
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
-            imageSrc: PortfolioImg,
+            
             mainImage: MainImage,
             categories: [
                 { name: 'Category' },
@@ -50,6 +50,9 @@ export const portfolioData = {
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
+            githubUrl: 'https://github.com/username/project1',
+            behanceUrl: 'https://www.behance.net/gallery/project1',
+            liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
             categories: [
@@ -71,6 +74,9 @@ export const portfolioData = {
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
+            githubUrl: 'https://github.com/username/project1',
+            behanceUrl: 'https://www.behance.net/gallery/project1',
+            liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
             categories: [
@@ -92,6 +98,9 @@ export const portfolioData = {
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
+            githubUrl: 'https://github.com/username/project1',
+            behanceUrl: 'https://www.behance.net/gallery/project1',
+            liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
             categories: [
@@ -113,6 +122,9 @@ export const portfolioData = {
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
+            githubUrl: 'https://github.com/username/project1',
+            behanceUrl: 'https://www.behance.net/gallery/project1',
+            liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
             categories: [
@@ -134,6 +146,9 @@ export const portfolioData = {
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
+            githubUrl: 'https://github.com/username/project1',
+            behanceUrl: 'https://www.behance.net/gallery/project1',
+            liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
             categories: [
@@ -155,6 +170,9 @@ export const portfolioData = {
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
+            githubUrl: 'https://github.com/username/project1',
+            behanceUrl: 'https://www.behance.net/gallery/project1',
+            liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
             categories: [
@@ -176,6 +194,9 @@ export const portfolioData = {
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
+            githubUrl: 'https://github.com/username/project1',
+            behanceUrl: 'https://www.behance.net/gallery/project1',
+            liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
             categories: [

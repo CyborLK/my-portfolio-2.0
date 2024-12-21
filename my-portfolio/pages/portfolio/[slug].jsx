@@ -1,9 +1,22 @@
-
 import React, { useState } from 'react'
 import Head from 'next/head';
 import Image from 'next/image';
 import { BackgroundImages, Header, Lightbox, PortfolioNavigation } from '@/components';
 import { portfolioData } from '@/components/Portfolio/PortfolioData';
+import { Github, ExternalLink } from 'lucide-react';
+
+const BehanceIcon = () => (
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="16" 
+        height="16" 
+        viewBox="0 0 24 24" 
+        fill="currentColor"
+        style={{ marginRight: '0.5rem' }}
+    >
+        <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/>
+    </svg>
+);
 
 const PortfolioPage = ({ project }) => {
     const [lightboxImage, setLightboxImage] = useState(null);
@@ -16,6 +29,9 @@ const PortfolioPage = ({ project }) => {
         setLightboxImage(null);
     };
 
+    // Check if any project links exist
+    const hasProjectLinks = project.githubUrl || project.behanceUrl || project.liveUrl;
+
     return (
         <>
             <Head>
@@ -25,16 +41,13 @@ const PortfolioPage = ({ project }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <div className="container">
-                {/* Header */}
                 <Header />
-                {/* Main row */}
                 <div className="row g-4 g-lg-5">
                     <div className="col-12 col-lg-4 col-xl-3">
                         <PortfolioNavigation />
                     </div>
                     <div className="col-12 col-lg-8 col-xl-9" id='portfolio'>
                         <div className="sections-wrapper">
-                            {/* Project content */}
                             <div className="section-box">
                                 <div className="row g-4">
                                     <div className="col-12 col-xl-4">
@@ -49,15 +62,61 @@ const PortfolioPage = ({ project }) => {
                                         <h6 className="mono-heading mb-0">Duration:</h6>
                                         <p>{project.duration}</p>
                                     </div>
-                                </div>{/* end row */}
+                                </div>
                                 <div className="mt-4">
                                     <h1>{project.projectTitle}</h1>
                                     <p>{project.description}</p>
+                                    
                                     <ul className="list-inline-pills mt-3">
                                         {project.categories.map((item, index) => (
                                             <li key={index}>{item.name}</li>
                                         ))}
                                     </ul>
+
+                                    {/* Project Links - Only shown if at least one link exists */}
+                                    {hasProjectLinks && (
+                                        <ul className="list-inline-pills mt-3">
+                                            {project.githubUrl && (
+                                                <li>
+                                                    <a 
+                                                        href={project.githubUrl} 
+                                                        target="_blank" 
+                                                        rel="noopener noreferrer"
+                                                        className="d-flex align-items-center"
+                                                    >
+                                                        <Github className="me-2" size={16} />
+                                                        GitHub
+                                                    </a>
+                                                </li>
+                                            )}
+                                            {project.behanceUrl && (
+                                                <li>
+                                                    <a 
+                                                        href={project.behanceUrl} 
+                                                        target="_blank" 
+                                                        rel="noopener noreferrer"
+                                                        className="d-flex align-items-center"
+                                                    >
+                                                        <BehanceIcon />
+                                                        Behance
+                                                    </a>
+                                                </li>
+                                            )}
+                                            {project.liveUrl && (
+                                                <li>
+                                                    <a 
+                                                        href={project.liveUrl} 
+                                                        target="_blank" 
+                                                        rel="noopener noreferrer"
+                                                        className="d-flex align-items-center"
+                                                    >
+                                                        <ExternalLink className="me-2" size={16} />
+                                                        Live Preview
+                                                    </a>
+                                                </li>
+                                            )}
+                                        </ul>
+                                    )}
                                 </div>
                                 <div className="row g-4 mt-2">
                                     <div className="col-12">
@@ -75,16 +134,14 @@ const PortfolioPage = ({ project }) => {
                                             </div>
                                         </div>
                                     ))}
-                                </div>{/* end section-box */}
-                            </div>{/* end section-box */}
-                            {/* end Project Content */}
+                                </div>
+                            </div>
                         </div>
                         {lightboxImage && (
                             <Lightbox image={lightboxImage} closeLightbox={closeLightbox} />
                         )}
                     </div>
-                </div> {/* end main row */}
-                {/*Background Vertical lines  */}
+                </div>
                 <BackgroundImages />
             </div>
         </>
@@ -92,7 +149,6 @@ const PortfolioPage = ({ project }) => {
 }
 
 export async function getStaticPaths() {
-    // Generate paths for all your blog projects
     const paths = portfolioData.projects.map((project) => ({
         params: { slug: project.slug },
     }));
@@ -105,8 +161,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     const slug = params.slug;
-
-    // Search for the blog project with the matching slug
     const project = portfolioData.projects.find((project) => project.slug === slug);
 
     if (!project) {
@@ -121,4 +175,5 @@ export async function getStaticProps({ params }) {
         },
     };
 }
-export default PortfolioPage
+
+export default PortfolioPage;
