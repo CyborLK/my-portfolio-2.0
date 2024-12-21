@@ -67,11 +67,7 @@ const PortfolioPage = ({ project }) => {
                                     <h1>{project.projectTitle}</h1>
                                     <p>{project.description}</p>
                                     
-                                    <ul className="list-inline-pills mt-3">
-                                        {project.categories.map((item, index) => (
-                                            <li key={index}>{item.name}</li>
-                                        ))}
-                                    </ul>
+                                    
 
                                     {/* Project Links - Only shown if at least one link exists */}
                                     {hasProjectLinks && (

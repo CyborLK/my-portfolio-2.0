@@ -31,11 +31,7 @@ export const portfolioData = {
             duration: '104 hours',
             
             mainImage: MainImage,
-            categories: [
-                { name: 'Category' },
-                { name: 'Category' },
-                { name: 'Category' }
-            ],
+            
             images: [
                 { image: MainImage },
                 { image: MainImage },
@@ -55,11 +51,7 @@ export const portfolioData = {
             liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
-            categories: [
-                { name: 'Category' },
-                { name: 'Category' },
-                { name: 'Category' }
-            ],
+            
             images: [
                 { image: MainImage },
                 { image: MainImage },
@@ -79,11 +71,7 @@ export const portfolioData = {
             liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
-            categories: [
-                { name: 'Category' },
-                { name: 'Category' },
-                { name: 'Category' }
-            ],
+            
             images: [
                 { image: MainImage },
                 { image: MainImage },
@@ -103,11 +91,7 @@ export const portfolioData = {
             liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
-            categories: [
-                { name: 'Category' },
-                { name: 'Category' },
-                { name: 'Category' }
-            ],
+            
             images: [
                 { image: MainImage },
                 { image: MainImage },
@@ -127,11 +111,7 @@ export const portfolioData = {
             liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
-            categories: [
-                { name: 'Category' },
-                { name: 'Category' },
-                { name: 'Category' }
-            ],
+            
             images: [
                 { image: MainImage },
                 { image: MainImage },
@@ -151,11 +131,7 @@ export const portfolioData = {
             liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
-            categories: [
-                { name: 'Category' },
-                { name: 'Category' },
-                { name: 'Category' }
-            ],
+            
             images: [
                 { image: MainImage },
                 { image: MainImage },
@@ -175,11 +151,7 @@ export const portfolioData = {
             liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
-            categories: [
-                { name: 'Category' },
-                { name: 'Category' },
-                { name: 'Category' }
-            ],
+            
             images: [
                 { image: MainImage },
                 { image: MainImage },
@@ -199,11 +171,7 @@ export const portfolioData = {
             liveUrl: 'https://project1-demo.com',
             imageSrc: PortfolioImg,
             mainImage: MainImage,
-            categories: [
-                { name: 'Category' },
-                { name: 'Category' },
-                { name: 'Category' }
-            ],
+            
             images: [
                 { image: MainImage },
                 { image: MainImage },
