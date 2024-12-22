@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PortfolioItem } from '../';
 import { portfolioData } from './PortfolioData';
+import PortfolioModal from './PortfolioModal';
 
 const ITEMS_PER_PAGE = 6; // Max projects per page
 
@@ -38,7 +39,7 @@ const Portfolio = () => {
     return (
         <div className="section-box mt-4 position-relative" id="portfolio">
             <div className="row">
-                <div className="col-12 col-md-10 col-xl-8">
+                <div className="col-12 col-md-10 col-xl-12">
                     <h6 className="title-heading mb-3" data-backdrop-text={portfolioData.mainData.title}>{portfolioData.mainData.title}</h6>
                     <h1>{portfolioData.mainData.title2}</h1>
                     <p>{portfolioData.mainData.description}</p>
@@ -73,13 +74,14 @@ const Portfolio = () => {
                 {paginatedProjects.map((item, index) => (
                     <PortfolioItem
                         key={index}
-                        imageSrc={item.imageSrc}
+                        imageSrc={item.imageSrc} // Pass unique imageSrc
                         category={item.category}
                         projectTitle={item.projectTitle}
                         slug={item.slug}
                     />
                 ))}
             </div>
+
             {/* Navigation Controls */}
             <div className="filter mt-4 portfolio-navigation">
                 <ul>

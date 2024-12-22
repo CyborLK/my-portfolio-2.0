@@ -1,11 +1,20 @@
-import PortfolioImg from '@/public/images/portfolio-img.jpg';
-import MainImage from '@/public/images/col-1.jpg';
+//Portfolio Section tumbnail images enter here
+import PortfolioImg1 from '@/public/images/portfolio-img-1.jpg';
+import PortfolioImg2 from '@/public/images/portfolio-img-2.jpg';
+import PortfolioImg3 from '@/public/images/portfolio-img-3.jpg';
+import PortfolioImg4 from '@/public/images/portfolio-img-4.jpg';
+
+//Portfolio Section main images enter here
+import ProjectImage1 from '@/public/images/project-1.jpg';
+import ProjectImage2 from '@/public/images/project-2.jpg';
+import ProjectImage3 from '@/public/images/project-3.jpg';
+import ProjectImage4 from '@/public/images/project-4.jpg';
 
 export const portfolioData = {
     mainData: {
         title: "Portfolio",
         title2: "My Latest Works",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+        description: "Driven by a commitment to excellence, here’s a showcase of projects crafted to meet the highest standards."
     },
     navigationList: [
         {
@@ -21,25 +30,25 @@ export const portfolioData = {
     ],
     projects: [
         {
-            projectTitle: 'Project Title 1',
-            slug: 'first',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            keywords: 'key1, key2, key3',
+            projectTitle: 'Career Pulse',
+            slug: 'project-1', // Unique slug for the project
+            description: 'CareerPulse is a mobile platform developed to support students and undergraduates in their internship journey by providing tailored insights and personalized guidance. With features that streamline the search process and enhance career readiness, CareerPulse empowers users to identify their strengths, improve essential skills, and find internships that align with their aspirations.',
+            keywords: 'mobile app development, UI design, flutter',
             category: 'first',
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
-            
-            mainImage: MainImage,
+            imageSrc: PortfolioImg1, // Unique image for this project
+            mainImage: ProjectImage1,
             
             images: [
-                { image: MainImage },
-                { image: MainImage },
+                { image: ProjectImage1 },
+                { image: ProjectImage1 },
             ]
         },
         {
             projectTitle: 'Project Title 2',
-            slug: 'second',
+            slug: 'project-2', // Unique slug for the project
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             keywords: 'key1, key2, key3',
             category: 'second',
@@ -49,17 +58,17 @@ export const portfolioData = {
             githubUrl: 'https://github.com/username/project1',
             behanceUrl: 'https://www.behance.net/gallery/project1',
             liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg,
-            mainImage: MainImage,
+            imageSrc: PortfolioImg2, // Unique image for this project
+            mainImage: ProjectImage2,
             
             images: [
-                { image: MainImage },
-                { image: MainImage },
+                { image: ProjectImage2 },
+                { image: ProjectImage2 },
             ]
         },
         {
             projectTitle: 'Project Title 3',
-            slug: 'first-1',
+            slug: 'project-3', // Unique slug for the project
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             keywords: 'key1, key2, key3',
             category: 'first',
@@ -69,17 +78,17 @@ export const portfolioData = {
             githubUrl: 'https://github.com/username/project1',
             behanceUrl: 'https://www.behance.net/gallery/project1',
             liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg,
-            mainImage: MainImage,
+            imageSrc: PortfolioImg3, // Unique image for this project
+            mainImage: ProjectImage3,
             
             images: [
-                { image: MainImage },
-                { image: MainImage },
+                { image: ProjectImage3 },
+                { image: ProjectImage3 },
             ]
         },
         {
             projectTitle: 'Project Title 4',
-            slug: 'second-1',
+            slug: 'project-4', // Unique slug for the project
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             keywords: 'key1, key2, key3',
             category: 'second',
@@ -89,93 +98,14 @@ export const portfolioData = {
             githubUrl: 'https://github.com/username/project1',
             behanceUrl: 'https://www.behance.net/gallery/project1',
             liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg,
-            mainImage: MainImage,
+            imageSrc: PortfolioImg4, // Unique image for this project
+            mainImage: ProjectImage4,
             
             images: [
-                { image: MainImage },
-                { image: MainImage },
+                { image: ProjectImage4 },
+                { image: ProjectImage4 },
             ]
         },
-        {
-            projectTitle: 'Project Title 5',
-            slug: 'first',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            keywords: 'key1, key2, key3',
-            category: 'first',
-            services: 'Branding, Photoshoot',
-            client: 'FlaTheme',
-            duration: '104 hours',
-            githubUrl: 'https://github.com/username/project1',
-            behanceUrl: 'https://www.behance.net/gallery/project1',
-            liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg,
-            mainImage: MainImage,
-            
-            images: [
-                { image: MainImage },
-                { image: MainImage },
-            ]
-        },
-        {
-            projectTitle: 'Project Title 6',
-            slug: 'second',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            keywords: 'key1, key2, key3',
-            category: 'second',
-            services: 'Branding, Photoshoot',
-            client: 'FlaTheme',
-            duration: '104 hours',
-            githubUrl: 'https://github.com/username/project1',
-            behanceUrl: 'https://www.behance.net/gallery/project1',
-            liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg,
-            mainImage: MainImage,
-            
-            images: [
-                { image: MainImage },
-                { image: MainImage },
-            ]
-        },
-        {
-            projectTitle: 'Project Title 7',
-            slug: 'first-1',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            keywords: 'key1, key2, key3',
-            category: 'first',
-            services: 'Branding, Photoshoot',
-            client: 'FlaTheme',
-            duration: '104 hours',
-            githubUrl: 'https://github.com/username/project1',
-            behanceUrl: 'https://www.behance.net/gallery/project1',
-            liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg,
-            mainImage: MainImage,
-            
-            images: [
-                { image: MainImage },
-                { image: MainImage },
-            ]
-        },
-        {
-            projectTitle: 'Project Title 8',
-            slug: 'second-1',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            keywords: 'key1, key2, key3',
-            category: 'second',
-            services: 'Branding, Photoshoot',
-            client: 'FlaTheme',
-            duration: '104 hours',
-            githubUrl: 'https://github.com/username/project1',
-            behanceUrl: 'https://www.behance.net/gallery/project1',
-            liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg,
-            mainImage: MainImage,
-            
-            images: [
-                { image: MainImage },
-                { image: MainImage },
-            ]
-        },
+        
     ]
 };

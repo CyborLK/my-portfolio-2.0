@@ -124,10 +124,7 @@ const PortfolioPage = ({ project }) => {
                                             key={index}
                                             onClick={() => openLightbox(item.image)}
                                         >
-                                            <div className="lightbox-image-box border-radius" >
-                                                <Image src={item.image} alt={project.projectTitle} placeholder="blur" />
-                                                <i className="bi bi-arrows-fullscreen"></i>
-                                            </div>
+                                            
                                         </div>
                                     ))}
                                 </div>
