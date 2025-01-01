@@ -34,14 +34,17 @@ export const portfolioData = {
     projects: [
         {
             projectTitle: 'Career Pulse',
-            slug: 'project-1', // Unique slug for the project
+            slug: 'project-1', 
             description: 'CareerPulse is a mobile platform developed to support students and undergraduates in their internship journey by providing tailored insights and personalized guidance. With features that streamline the search process and enhance career readiness, CareerPulse empowers users to identify their strengths, improve essential skills, and find internships that align with their aspirations.',
             keywords: 'mobile app development, UI design, flutter',
             categories: ['mobile-apps', 'ui-ux'],
-            services: 'Branding, Photoshoot',
-            client: 'FlaTheme',
-            duration: '104 hours',
-            imageSrc: PortfolioImg1, // Unique image for this project
+            services: 'Finding Internships, CV Suggetions',
+            client: 'Universtiy Project',
+            duration: '5 months',
+            githubUrl: 'https://github.com/CyborLK/CareerPulse-Mobile-App',
+            behanceUrl: 'https://www.behance.net/gallery/project1',
+            liveUrl: 'https://drive.google.com/drive/folders/1eTCEJDzN1jcXA8oYkQTLCrqS60lGPP3p?usp=sharing',
+            imageSrc: PortfolioImg1, 
             mainImage: ProjectImage1,
             
             images: [
@@ -51,7 +54,7 @@ export const portfolioData = {
         },
         {
             projectTitle: 'Project Title 2',
-            slug: 'project-2', // Unique slug for the project
+            slug: 'project-2', 
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             keywords: 'key1, key2, key3',
             categories: 'second',
@@ -61,7 +64,7 @@ export const portfolioData = {
             githubUrl: 'https://github.com/username/project1',
             behanceUrl: 'https://www.behance.net/gallery/project1',
             liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg2, // Unique image for this project
+            imageSrc: PortfolioImg2, 
             mainImage: ProjectImage2,
             
             images: [
@@ -71,7 +74,7 @@ export const portfolioData = {
         },
         {
             projectTitle: 'Project Title 3',
-            slug: 'project-3', // Unique slug for the project
+            slug: 'project-3', 
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             keywords: 'key1, key2, key3',
             categories: 'first',
@@ -81,7 +84,7 @@ export const portfolioData = {
             githubUrl: 'https://github.com/username/project1',
             behanceUrl: 'https://www.behance.net/gallery/project1',
             liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg3, // Unique image for this project
+            imageSrc: PortfolioImg3, 
             mainImage: ProjectImage3,
             
             images: [
@@ -91,7 +94,7 @@ export const portfolioData = {
         },
         {
             projectTitle: 'Project Title 4',
-            slug: 'project-4', // Unique slug for the project
+            slug: 'project-4', 
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             keywords: 'key1, key2, key3',
             categories: 'second',
@@ -101,7 +104,7 @@ export const portfolioData = {
             githubUrl: 'https://github.com/username/project1',
             behanceUrl: 'https://www.behance.net/gallery/project1',
             liveUrl: 'https://project1-demo.com',
-            imageSrc: PortfolioImg4, // Unique image for this project
+            imageSrc: PortfolioImg4, 
             mainImage: ProjectImage4,
             
             images: [
