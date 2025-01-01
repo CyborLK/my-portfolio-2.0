@@ -16,25 +16,28 @@ export const portfolioData = {
         title2: "My Latest Works",
         description: "Driven by a commitment to excellence, here’s a showcase of projects crafted to meet the highest standards."
     },
+
     navigationList: [
         {
-            title: "First",
-            classes: "first",
-            dataFilter: ".first"
+            title: "Mobile Apps",
+            classes: "mobile-apps",
+            dataFilter: ".mobile-apps"
         },
         {
-            title: "Second",
-            classes: "second",
-            dataFilter: ".second"
+            title: "UI/UX Design",
+            classes: "ui-ux",
+            dataFilter: ".ui-ux"
         },
     ],
+
+
     projects: [
         {
             projectTitle: 'Career Pulse',
             slug: 'project-1', // Unique slug for the project
             description: 'CareerPulse is a mobile platform developed to support students and undergraduates in their internship journey by providing tailored insights and personalized guidance. With features that streamline the search process and enhance career readiness, CareerPulse empowers users to identify their strengths, improve essential skills, and find internships that align with their aspirations.',
             keywords: 'mobile app development, UI design, flutter',
-            category: 'first',
+            categories: ['mobile-apps', 'ui-ux'],
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
@@ -51,7 +54,7 @@ export const portfolioData = {
             slug: 'project-2', // Unique slug for the project
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             keywords: 'key1, key2, key3',
-            category: 'second',
+            categories: 'second',
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
@@ -71,7 +74,7 @@ export const portfolioData = {
             slug: 'project-3', // Unique slug for the project
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             keywords: 'key1, key2, key3',
-            category: 'first',
+            categories: 'first',
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',
@@ -91,7 +94,7 @@ export const portfolioData = {
             slug: 'project-4', // Unique slug for the project
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             keywords: 'key1, key2, key3',
-            category: 'second',
+            categories: 'second',
             services: 'Branding, Photoshoot',
             client: 'FlaTheme',
             duration: '104 hours',

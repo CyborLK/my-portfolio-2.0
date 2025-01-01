@@ -11,7 +11,7 @@ const Portfolio = () => {
 
     const filteredProjects = selectedFilter === ''
         ? portfolioData.projects
-        : portfolioData.projects.filter((item) => item.category === selectedFilter);
+        : portfolioData.projects.filter((item) => item.categories.includes(selectedFilter));
 
     const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
 
