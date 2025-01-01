@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PortfolioItem } from '../';
 import { portfolioData } from './PortfolioData';
-import PortfolioModal from './PortfolioModal';
+
 
 const ITEMS_PER_PAGE = 6; // Max projects per page
 
