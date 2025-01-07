@@ -11,6 +11,11 @@ export const eduData = {
             university: 'University of Sri Jayewardenepura',
         },
         {
+            date: '2022 - 2023',
+            degree: 'Certificate in Digital Marketing',
+            university: 'Sri Lanka Institute of Marketing',
+        },
+        {
             date: '2012 - 2020',
             degree: 'GCE Advanced Level',
             university: 'St.Thomas\'College',

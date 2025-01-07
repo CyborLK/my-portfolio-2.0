@@ -9,8 +9,9 @@ const Navigation = () => {
     const navItems = [
         { label: 'About Me', id: 'about' },
         { label: 'Services', id: 'services' },
-        { label: 'Portfolio', id: 'portfolio' },
         { label: 'Education', id: 'education' },
+        { label: 'Skills', id: 'skills' },
+        { label: 'Portfolio', id: 'portfolio' },
         { label: 'Achievements', id: 'achievement' },
         { label: 'Testimonial', id: 'testimonial' },
         { label: 'Blog', id: 'blog' },
@@ -35,7 +36,7 @@ const Navigation = () => {
         for (const item of navItems) {
             const element = document.getElementById(item.id);
             if (element) {
-                const offsetTop = element.offsetTop - 100; // Adjust for sticky nav height
+                const offsetTop = element.offsetTop - 120; // Adjust for sticky nav height
                 const offsetBottom = offsetTop + element.offsetHeight;
                 if (scrollY >= offsetTop && scrollY < offsetBottom) {
                     currentActive = item.id;
@@ -66,7 +67,7 @@ const Navigation = () => {
     const handleNavClick = (id) => {
         const targetElement = document.getElementById(id);
         if (targetElement) {
-            const topPosition = targetElement.offsetTop - 80; // Adjust for sticky nav height
+            const topPosition = targetElement.offsetTop - 100; // Adjust for sticky nav height
             window.scrollTo({ top: topPosition, behavior: 'smooth' });
             setActiveLink(id);
         }
@@ -98,6 +99,7 @@ const Navigation = () => {
                             <button
                                 className={`nav-link ${activeLink === item.id ? 'active' : ''}`}
                                 onClick={() => handleNavClick(item.id)}
+                                aria-label={`Navigate to ${item.label}`}
                             >
                                 <span className="nav-link-desktop">{item.label}</span>
                                 <span className="nav-link-mobile">{item.label.charAt(0)}</span>
