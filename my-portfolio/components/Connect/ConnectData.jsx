@@ -4,8 +4,7 @@ export const connectData = {
         title2: "Reach Out Anytime",
         title3: "We're Here to Help",
         description: "Feel free to reach out for collaborations or just a friendly chat!",
-        phone: "+94 76 22 13 088",
-        email: "nadunsd@gmail.com",
+        email: "nadundaluwatta26@gmail.com",
         address: "Matale, Sri Lanka",
     },
 };
