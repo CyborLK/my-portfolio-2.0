@@ -22,6 +22,7 @@ const Navigation = () => {
     const socialMediaLinks = [
         { label: 'Facebook', icon: 'fab fa-facebook-f', url: 'https://facebook.com' },
         { label: 'LinkedIn', icon: 'fab fa-linkedin-in', url: 'https://linkedin.com' },
+        { lable: 'GitHub', icon: 'fab fa-github', url: 'https://github.com' },
         { label: 'X', icon: 'fab fa-twitter', url: 'https://twitter.com' },
         { label: 'Behance', icon: 'fab fa-behance', url: 'https://behance.net' },
         { label: 'Medium', icon: 'fab fa-medium', url: 'https://medium.com' },
