@@ -17,16 +17,7 @@ const Header = () => {
                 <div className="row">
                     <div className="col-12 col-lg-4 col-xl-3 order-lg-2 text-end">
                         <div className="d-inline-flex align-items-center">
-                            {/* Social Links */}
-                            <ul className="list-inline d-inline-block mono-heading fw-medium">
-                                {headerData.socialLinks.map((item, index) => (
-                                    <li key={index}>
-                                        <Link href={item.url} className="link-decoration">
-                                            {item.name}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
+                            {/* Social Links - Removed */}
                         </div>
                     </div>
                     <div className="col-12 col-lg-8 order-lg-1 col-xl-9">
