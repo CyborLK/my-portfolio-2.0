@@ -1,7 +1,7 @@
+// Updated code for Portfolio.jsx
 import React, { useState } from 'react';
 import { PortfolioItem } from '../';
 import { portfolioData } from './PortfolioData';
-
 
 const ITEMS_PER_PAGE = 6; // Max projects per page
 
@@ -32,7 +32,6 @@ const Portfolio = () => {
         }
     };
 
-    // Check if navigation is possible
     const canGoNext = currentPage < totalPages - 1;
     const canGoPrevious = currentPage > 0;
 
@@ -74,8 +73,8 @@ const Portfolio = () => {
                 {paginatedProjects.map((item, index) => (
                     <PortfolioItem
                         key={index}
-                        imageSrc={item.imageSrc} // Pass unique imageSrc
-                        category={item.category}
+                        imageSrc={item.imageSrc}
+                        categories={item.categories}
                         projectTitle={item.projectTitle}
                         slug={item.slug}
                     />
