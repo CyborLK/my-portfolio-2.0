@@ -45,7 +45,7 @@ const PortfolioPage = ({ project }) => {
                     <div className="col-12 col-lg-4 col-xl-3">
                         <PortfolioNavigation />
                     </div>
-                    <div className="col-12 col-lg-8 col-xl-9" id='portfolio'>
+                    <div className="col-12 col-lg-8 col-xl-9" id="portfolio">
                         <div className="sections-wrapper">
                             <div className="section-box">
                                 <div className="row g-4">
@@ -75,6 +75,10 @@ const PortfolioPage = ({ project }) => {
                                                 })
                                                 .join(', ')}
                                         </p>
+                                    </div>
+                                    <div className="col-12 col-xl-4">
+                                        <h6 className="mono-heading mb-0">Tools:</h6>
+                                        <p>{project.tools ? project.tools.join(', ') : 'N/A'}</p> {/* Render tools */}
                                     </div>
                                 </div>
 
@@ -125,6 +129,19 @@ const PortfolioPage = ({ project }) => {
                                         </ul>
                                     )}
                                 </div>
+                                {project.videoUrl && (
+                                    <div className="mt-4 video-wrapper">
+                                        <iframe
+                                            width="100%"
+                                            height="315"
+                                            src={project.videoUrl.replace('watch?v=', 'embed/')}
+                                            title="YouTube video"
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                        ></iframe>
+                                    </div>
+                                )}
                                 <div className="row g-4 mt-2">
                                     <div className="col-12">
                                         <Image className="border-radius" src={project.mainImage} alt={project.projectTitle} placeholder="blur" />
