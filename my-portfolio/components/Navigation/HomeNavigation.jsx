@@ -21,7 +21,7 @@ const Navigation = () => {
     // Social media links
     const socialMediaLinks = [
         { label: 'Facebook', icon: 'fab fa-facebook-f', url: 'https://facebook.com' },
-        { label: 'LinkedIn', icon: 'fab fa-linkedin-in', url: 'www.linkedin.com/in/nadundaluwatta' },
+        { label: 'LinkedIn', icon: 'fab fa-linkedin-in', url: 'https://linkedin.com/in/nadundaluwatta' },
         { lable: 'GitHub', icon: 'fab fa-github', url: 'https://github.com' },
         { label: 'X', icon: 'fab fa-twitter', url: 'https://twitter.com' },
         { label: 'Behance', icon: 'fab fa-behance', url: 'https://behance.net' },
