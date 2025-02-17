@@ -20,13 +20,13 @@ const Navigation = () => {
 
     // Social media links
     const socialMediaLinks = [
-        { label: 'Facebook', icon: 'fab fa-facebook-f', url: 'https://facebook.com' },
+        { label: 'Facebook', icon: 'fab fa-facebook-f', url: 'https://facebook.com/nadun.daluwatta.3/' },
         { label: 'LinkedIn', icon: 'fab fa-linkedin-in', url: 'https://linkedin.com/in/nadundaluwatta' },
-        { lable: 'GitHub', icon: 'fab fa-github', url: 'https://github.com' },
-        { label: 'X', icon: 'fab fa-twitter', url: 'https://twitter.com' },
-        { label: 'Behance', icon: 'fab fa-behance', url: 'https://behance.net' },
-        { label: 'Medium', icon: 'fab fa-medium', url: 'https://medium.com' },
-        { label: 'YouTube', icon: 'fab fa-youtube', url: 'https://youtube.com' },
+        { lable: 'GitHub', icon: 'fab fa-github', url: 'https://github.com/CyborLK' },
+        { label: 'X', icon: 'fab fa-twitter', url: 'https://x.com/daluwatta_nadun' },
+        { label: 'Behance', icon: 'fab fa-behance', url: 'https://www.behance.net/nadundaluwattax' },
+        { label: 'Medium', icon: 'fab fa-medium', url: 'https://medium.com/@nadundaluwatta26' },
+        { label: 'YouTube', icon: 'fab fa-youtube', url: 'https://www.youtube.com/@nadundaluwatta' },
     ];
 
     // Smooth scrolling and active link management
