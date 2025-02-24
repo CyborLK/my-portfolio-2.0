@@ -7,7 +7,7 @@ import PortfolioImg4 from '@/public/images/portfolio-img-4.jpg';
 //Portfolio Section main images enter here
 import ProjectImage1 from '@/public/images/CareerPulse-main.jpg';
 import ProjectImage2 from '@/public/images/SparkChat-main.png';
-import ProjectImage3 from '@/public/images/project-3.jpg';
+import ProjectImage3 from '@/public/images/project-3.png';
 import ProjectImage4 from '@/public/images/project-4.jpg';
 
 export const portfolioData = {
@@ -32,6 +32,11 @@ export const portfolioData = {
             title: "Web Development",
             classes: "web-dev",
             dataFilter: ".web-dev"
+        },
+        {
+            title: "Software Development",
+            classes: "soft-dev",
+            dataFilter: ".soft-dev"
         },
     ],
 
@@ -81,19 +86,19 @@ export const portfolioData = {
             ]
         },
         {
-            projectTitle: 'Project Title 3',
+            projectTitle: 'Certificate Generator',
             slug: 'project-3', 
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            keywords: 'key1, key2, key3',
-            categories: [ 'web-dev', 'ui-ux'],
-            tools: ['React', 'Figma', 'Ballerina'],
-            services: 'Branding, Photoshoot',
-            client: 'FlaTheme',
-            duration: '104 hours',
-            githubUrl: 'https://github.com/username/project1',
-            behanceUrl: 'https://www.behance.net/gallery/project1',
-            liveUrl: 'https://project1-demo.com',
-            videoUrl: 'https://www.youtube.com',
+            description: 'A Python script to automatically generate personalized certificates from a template image and a CSV file containing names. The script centers each name horizontally on the certificate for professional presentation.',
+            keywords: 'python, python script, certificate generator',
+            categories: [ 'soft-dev'],
+            tools: ['Python 3', 'Pillow (PIL)', 'pandas', 'tqdm'],
+            services: 'Certificate Name Generation',
+            client: 'ICT Society USJP',
+            duration: '24 hours',
+            githubUrl: 'https://github.com/CyborLK/Certificate-Generator',
+            //behanceUrl: 'https://www.behance.net/gallery/project1',
+            //liveUrl: 'https://project1-demo.com',
+            videoUrl: 'https://www.youtube.com/embed/EiWK1qi090M?si=MNEBGXXZW_CCKQS4',
             imageSrc: PortfolioImg3, 
             mainImage: ProjectImage3,
             
