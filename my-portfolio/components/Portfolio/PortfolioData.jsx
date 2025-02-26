@@ -3,12 +3,14 @@ import PortfolioImg1 from '@/public/images/CareerPulse.jpg';
 import PortfolioImg2 from '@/public/images/SparkChat.png';
 import PortfolioImg3 from '@/public/images/CertificateGenerator.jpg';
 import PortfolioImg4 from '@/public/images/SmartCafeteria.jpg';
+import PortfolioImg5 from '@/public/images/my-portfolio.png';
 
 //Portfolio Section main images enter here
 import ProjectImage1 from '@/public/images/CareerPulse-main.jpg';
 import ProjectImage2 from '@/public/images/SparkChat-main.png';
 import ProjectImage3 from '@/public/images/CertificateGenerator-main.png';
 import ProjectImage4 from '@/public/images/SmartCafeteria-main.jpg';
+import ProjectImage5 from '@/public/images/my-portfolio-main.png';
 
 export const portfolioData = {
     mainData: {
@@ -132,6 +134,29 @@ export const portfolioData = {
             images: [
                 { image: ProjectImage4 },
                 { image: ProjectImage4 },
+            ]
+        },
+
+        {
+            projectTitle: 'Portfolio',
+            slug: 'project-5', 
+            description: 'This is my personal portfolio website built with Next.js and SCSS, showcasing my skills, projects, and experience in web development. The site is designed to be fast, responsive, and modern, providing a seamless user experience.',
+            keywords: 'Website, Portfolio, Web Development, Next.js',
+            categories: [ 'web-dev'],
+            tools: ['Next.js, SCSS, Figma, Vercel'],
+            services: 'Personal Portfolio Website',
+            client: 'Personal Project',
+            duration: '4 months',
+            githubUrl: 'https://github.com/CyborLK/my-portfolio-2.0',
+            //behanceUrl: 'https://www.behance.net/gallery/project1',
+            liveUrl: 'https://www.nadundaluwatta.me/',
+            //videoUrl: 'https://www.youtube.com/embed/UOEE1JIRQfk?si=Hv3qJ8o2u9qANLpq',
+            imageSrc: PortfolioImg5, 
+            mainImage: ProjectImage5,
+            
+            images: [
+                { image: ProjectImage5 },
+                { image: ProjectImage5 },
             ]
         },
         
