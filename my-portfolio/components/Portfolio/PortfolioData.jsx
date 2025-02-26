@@ -1,14 +1,14 @@
 //Portfolio Section tumbnail images enter here
 import PortfolioImg1 from '@/public/images/CareerPulse.jpg';
 import PortfolioImg2 from '@/public/images/SparkChat.png';
-import PortfolioImg3 from '@/public/images/portfolio-img-3.jpg';
-import PortfolioImg4 from '@/public/images/portfolio-img-4.jpg';
+import PortfolioImg3 from '@/public/images/CertificateGenerator.jpg';
+import PortfolioImg4 from '@/public/images/SmartCafeteria.jpg';
 
 //Portfolio Section main images enter here
 import ProjectImage1 from '@/public/images/CareerPulse-main.jpg';
 import ProjectImage2 from '@/public/images/SparkChat-main.png';
-import ProjectImage3 from '@/public/images/project-3.png';
-import ProjectImage4 from '@/public/images/project-4.jpg';
+import ProjectImage3 from '@/public/images/CertificateGenerator-main.png';
+import ProjectImage4 from '@/public/images/SmartCafeteria-main.jpg';
 
 export const portfolioData = {
     mainData: {
@@ -37,6 +37,11 @@ export const portfolioData = {
             title: "Software Development",
             classes: "soft-dev",
             dataFilter: ".soft-dev"
+        },
+        {
+            title: "IoT Projects",
+            classes: "iot-dev",
+            dataFilter: ".iot-dev"
         },
     ],
 
@@ -108,19 +113,19 @@ export const portfolioData = {
             ]
         },
         {
-            projectTitle: 'Project Title 4',
+            projectTitle: 'Cafeteria Automation System',
             slug: 'project-4', 
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            keywords: 'key1, key2, key3',
-            categories: [ 'web-dev', 'ui-ux'],
-            tools: ['React', 'Figma', 'Ballerina'],
-            services: 'Branding, Photoshoot',
-            client: 'FlaTheme',
-            duration: '104 hours',
-            githubUrl: 'https://github.com/username/project1',
-            behanceUrl: 'https://www.behance.net/gallery/project1',
-            liveUrl: 'https://project1-demo.com',
-            videoUrl: 'https://www.youtube.com',
+            description: 'Revolutionizing the dining experience with technology! 🚀 Say goodbye to long queues, manual store management, and complicated payment processes. Our Cafeteria Automation System brings efficiency, convenience, and automation to your cafeteria.',
+            keywords: 'IoT, Arduino, Digital Control Systems',
+            categories: [ 'iot-dev'],
+            tools: ['Arduino'],
+            services: 'Digital Control Systems',
+            client: 'University Project',
+            duration: '2 months',
+            githubUrl: 'https://github.com/CyborLK/Cafeteria_Automation_System',
+            //behanceUrl: 'https://www.behance.net/gallery/project1',
+            //liveUrl: 'https://project1-demo.com',
+            videoUrl: 'https://www.youtube.com/embed/UOEE1JIRQfk?si=Hv3qJ8o2u9qANLpq',
             imageSrc: PortfolioImg4, 
             mainImage: ProjectImage4,
             
