@@ -1,4 +1,5 @@
 import TestimonialAvatar from '@/public/images/testimonial-avatar.jpg';
+import TestimonialAvatar1 from '@/public/images/testimonial-avatar-madushan.jpg';
 
 export const testimonialData = {
     mainData: {
@@ -7,22 +8,11 @@ export const testimonialData = {
     },
     testimonial: [
         {
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis',
-            name: 'Sandra Radford',
-            jobTitle: 'Project Manager',
-            avatar: TestimonialAvatar,
+            description: 'I highly recommend Nadun as a talented Graphic Designer and Social Media Manager. Their creativity, attention to detail, and ability to craft engaging content make them an asset to any brand. If you are looking for someone to elevate your digital presence, Nadun is the right choice!',
+            name: 'Madushan Jayasinghe',
+            jobTitle: 'A/L Tutor',
+            avatar: TestimonialAvatar1,
         },
-        {
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis',
-            name: 'Nisansala',
-            jobTitle: 'Project Manager',
-            avatar: TestimonialAvatar,
-        },
-        {
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis',
-            name: 'Nadun ',
-            jobTitle: 'Project Manager',
-            avatar: TestimonialAvatar,
-        },
+        
     ]
 };

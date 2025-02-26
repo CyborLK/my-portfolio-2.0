@@ -115,7 +115,7 @@ export const portfolioData = {
         {
             projectTitle: 'Cafeteria Automation System',
             slug: 'project-4', 
-            description: 'Revolutionizing the dining experience with technology! 🚀 Say goodbye to long queues, manual store management, and complicated payment processes. Our Cafeteria Automation System brings efficiency, convenience, and automation to your cafeteria.',
+            description: 'The Cafeteria Automation System is an innovative solution designed to enhance the dining experience through seamless automation and efficient management. By integrating queue management, store inventory tracking, digital payments, and table seating reservations, this system eliminates long wait times, streamlines order processing, and ensures a hassle-free cafeteria experience. Built with Arduino, frontend & backend development, and building automation systems (BAS), it enables real-time monitoring and smooth operations for both customers and administrators. Whether it s reserving a queue number, managing stock, or securing a seat, this system transforms traditional cafeteria operations with speed, accuracy, and convenience.',
             keywords: 'IoT, Arduino, Digital Control Systems',
             categories: [ 'iot-dev'],
             tools: ['Arduino'],

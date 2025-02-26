@@ -1,7 +1,7 @@
-import Certificate1 from '@/public/images/certificate1.png';
-import Certificate2 from '@/public/images/certificate2.png';
-import Certificate3 from '@/public/images/certificate3.png';
-import Certificate4 from '@/public/images/certificate4.png';
+import Certificate1 from '@/public/images/Google-UI-Certificate.png';
+import Certificate2 from '@/public/images/Ballerina-WSO2-Certificate.png';
+import Certificate3 from '@/public/images/IT-Service-Certificate.png';
+import Certificate4 from '@/public/images/Digital Marketing-Certificate.png';
 import Certificate5 from '@/public/images/certificate5.png';
 
 export const achivementsData = {
@@ -12,28 +12,28 @@ export const achivementsData = {
     achivements: [
         {
             image: Certificate1,
-            name: 'Web Development Certification',
-            issuer: 'Online Learning Platform',
+            name: 'Foundations of User Experience (UX) Design',
+            issuer: 'Google',
         },
         {
             image: Certificate2,
-            name: 'Advanced React Course',
-            issuer: 'Tech Education Institute',
+            name: 'Innovate with Ballerina Coding Challenge',
+            issuer: 'WSO2',
         },
         {
             image: Certificate3,
-            name: 'Full Stack Development',
-            issuer: 'Coding Bootcamp',
+            name: 'ISO/IEC 20000 IT SERVICE MANAGEMENT ASSOCIATE™',
+            issuer: 'WWW.SKILLFRONT.COM',
         },
         {
             image: Certificate4,
-            name: 'Full Stack Development',
-            issuer: 'Coding Bootcamp',
+            name: 'Certificate in Digital Marketing',
+            issuer: 'Sri Lanka Institute of Marketing',
         },
         {
             image: Certificate5,
-            name: 'Full Stack Development',
-            issuer: 'Coding Bootcamp',
+            name: 'Asure Resource Management',
+            issuer: 'MS Student Ambasidor Coding Bootcamp',
         },
     ]
 };

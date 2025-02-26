@@ -6,15 +6,19 @@ export const clientsData = {
     clients: [
         {
             logo: '/images/icts.png',
-            url: 'https://client1.com',
+            url: 'https://www.linkedin.com/company/icts-usj',
         },
         {
             logo: '/images/electrocombat.png',
-            url: 'https://client2.com',
+            url: 'https://mtss.tech/',
         },
         {
             logo: '/images/Xtreame.png',
-            url: 'https://client3.com',
+            url: 'https://www.japuraxtreme.me/',
+        },
+        {
+            logo: '/images/cryptx.png',
+            url: 'https://cryptx-usj.live/',
         },
         
         // Add more clients as needed
