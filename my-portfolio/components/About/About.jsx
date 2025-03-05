@@ -52,9 +52,16 @@ const About = () => {
         animateCounters();
     }, []);
 
+    const handleDownloadResume = () => {
+        const resumePath = '/cv/Nadun - CV - UIUX.pdf';
+        const link = document.createElement('a');
+        link.href = resumePath;
+        link.download = 'Nadun_Resume.pdf';
+        link.click();
+    };
+
     return (
         <div className="section-box" id="about">
-
             <div className="row g-4 g-xl-5">
                 <div className="col-12 col-xl-4">
                     {/* Hero Avatar */}
@@ -87,6 +94,24 @@ const About = () => {
                         ))}
                     </ul>
                     <p className="mt-1">{aboutData.mainData.description}</p>
+                    
+                    {/* Download Resume Button */}
+                    <div className="filter mt-4">
+                        <ul>
+                            <li 
+                                onClick={handleDownloadResume}
+                                className="mixitup-control-active"
+                                style={{
+                                    cursor: 'pointer',
+                                    display: 'inline-block',
+                                    padding: '8px 16px'
+                                }}
+                            >
+                                <i className="fas fa-download me-2"></i>
+                                Download Resume
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>{/* end row */}
             <div className="row g-4 mt-1">
