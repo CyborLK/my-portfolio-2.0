@@ -4,6 +4,7 @@ import PortfolioImg2 from '@/public/images/SparkChat.png';
 import PortfolioImg3 from '@/public/images/CertificateGenerator.jpg';
 import PortfolioImg4 from '@/public/images/SmartCafeteria.jpg';
 import PortfolioImg5 from '@/public/images/my-portfolio.png';
+import PortfolioImg6 from '@/public/images/auruduapp.png';
 
 //Portfolio Section main images enter here
 import ProjectImage1 from '@/public/images/CareerPulse-main.jpg';
@@ -11,6 +12,7 @@ import ProjectImage2 from '@/public/images/SparkChat-main.png';
 import ProjectImage3 from '@/public/images/CertificateGenerator-main.png';
 import ProjectImage4 from '@/public/images/SmartCafeteria-main.jpg';
 import ProjectImage5 from '@/public/images/my-portfolio-main.png';
+import ProjectImage6 from '@/public/images/auruduapp-main.png';
 
 export const portfolioData = {
     mainData: {
@@ -81,7 +83,7 @@ export const portfolioData = {
             client: 'Competition Project',
             duration: '1 month',
             githubUrl: 'https://github.com/CyborLK/iwb083-code-alphaz',
-            //behanceUrl: 'https://www.behance.net/gallery/project1',
+            behanceUrl: 'https://www.behance.net/gallery/221512501/SparkChat-Innovative-real-time-messaging-platform',
             liveUrl: 'https://project1-demo.com',
             videoUrl: 'https://www.youtube.com/embed/TQBCvCmLzlk?si=JzsCo6YFjEsqs6ro',
             imageSrc: PortfolioImg2, 
@@ -159,6 +161,29 @@ export const portfolioData = {
                 { image: ProjectImage5 },
             ]
         },
+
         
+        {
+            projectTitle: 'Nekath Seettuwa 2025',	
+            slug: 'project-6', 
+            description: 'Built with Flutter and designed in Figma, this app guides users through auspicious Nekath times, rituals, and festive moments with countdowns, a built-in compass, and traditional Aurudu music.This was a passion project rooted in culture, created to make the New Year experience more meaningful and accessible in the digital age.',
+            keywords: 'Mobile App, Flutter, Android App, Figma, UI/UX',
+            categories: [ 'mobile-apps', 'ui-ux'],
+            tools: ['Flutter, Android Studio, Figma, Photoshop'],
+            services: 'Aurudu Nekath App',
+            client: 'Personal Project',
+            duration: '2 months',
+            githubUrl: 'https://github.com/CyborLK/aurudu_app',
+            behanceUrl: 'https://www.behance.net/gallery/224320881/Nekath-Seettuwa-2025-Sinhala-Tamil-New-Year-App',
+            liveUrl: 'https://github.com/CyborLK/aurudu_app/releases/tag/v1.0.1',
+            //videoUrl: 'https://www.youtube.com/embed/UOEE1JIRQfk?si=Hv3qJ8o2u9qANLpq',
+            imageSrc: PortfolioImg6, 
+            mainImage: ProjectImage6,
+            
+            images: [
+                { image: ProjectImage6 },
+                { image: ProjectImage6 },
+            ]
+        },
     ]
 };
