@@ -11,6 +11,11 @@ export const eduData = {
             university: 'University of Sri Jayewardenepura',
         },
         {
+            date: '2025 - Present',
+            degree: 'Cisco Certified Network Associate (CCNA)',
+            university: 'Cisco Networking Academy - Center for IT Services University of Moratuwa',
+        },
+        {
             date: '2022 - 2023',
             degree: 'Certificate in Digital Marketing',
             university: 'Sri Lanka Institute of Marketing',
@@ -23,6 +28,11 @@ export const eduData = {
         
     ],
     experience: [
+        {
+            date: '2025 - PRESENT',
+            degree: 'UI/UX Designer',
+            university: 'Payshia Software Solutions',
+        },
         {
             date: '2024 - PRESENT',
             degree: 'Media Coordinator',
